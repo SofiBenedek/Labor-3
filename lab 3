@@ -1,0 +1,64 @@
+//félkész
+// #include <stdio.h>
+
+
+// int main(){
+
+//     char c ;
+//     char szoveg;
+//     double sum = 0;
+//     do {
+//         scanf("%c", &c); 
+        
+//         if (c >= '0' && c <= '9') {
+//             sum = sum + (c - '0'); 
+//         } 
+//         else{
+//            printf("%c", c);
+            
+//         }
+//     } while (c != '\n'); 
+//    printf ("%.3f\n", sum ); 
+
+
+//     return 0;
+// }
+
+#include <stdio.h>
+
+int main(){
+
+    int n;
+
+    scanf("%d", &n);
+    int lnp = n;
+    int lkn = n;
+    do
+    {
+        if (n > 0 && n < lnp)
+        {
+                lnp = n;
+        }else if (n < 0 && n > lkn)
+        {
+                lkn = n; 
+        }
+    }while (scanf("%d", &n) == 1);
+    printf("%d %d",lkn, lnp);
+    
+
+    return 0;
+}
+
+// #include <stdio.h>
+
+// int main(){
+
+//     return 0
+// }
+
+// #include <stdio.h>
+
+// int main(){
+
+//     return 0
+// }
